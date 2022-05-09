@@ -7,9 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Blog</title>
     <link rel="stylesheet" href="/app.css">
-    <script src="/app.js"></script>
 </head>
 <body>
-<h1>Hello World</h1>
+    <?php foreach ($posts as $post) : ?>
+        <article>
+            <?= $post; ?>
+        </article>
+<?php endforeach; ?>
 </body>
 </html>
